@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page title</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+        
+        <!-- External CSS -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        
+        <style>
+            /*
+             *Reset
+            */
+            input,
+            label,
+            select,
+            button,
+            textarea
+            {
+                margin:0;
+                border:0;
+                padding:0;
+                display:inline-block;
+                vertical-align:middle;
+                white-space:normal;
+                background:none;
+                line-height:1;
+            }
+
+            /* Remove the stupid outer glow in Webkit */
+            input:focus
+            {
+                outline:0;
+            }
+
+            /* Box Sizing Reset
+            -----------------------------------------------*/
+
+            /* All of our custom controls should be what we expect them to be */
+            input,
+            textarea
+            {
+                -webkit-box-sizing:content-box;
+                -moz-box-sizing:content-box;
+                box-sizing:content-box;
+            }
+
+            /* These elements are usually rendered a certain way by the browser */
+            button,
+            input[type=reset],
+            input[type=button],
+            input[type=submit],
+            input[type=checkbox],
+            input[type=radio],
+            select
+            {
+                -webkit-box-sizing:border-box;
+                -moz-box-sizing:border-box;
+                box-sizing:border-box;
+            }
+            
+            
+            /*
+             *Configuração padrao
+            */
+            @media only screen and (max-width: 480px) {
+                body {
+                    background-color: #29abe2;
+                    font-family: "Century Gothic", sans-serif;
+                    color: white;
+                }
+                
+                header,
+                section,
+                .row,
+                .esqueceu--login{
+                    max-width: 480px;
+                }
+                header{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top:0;
+                    padding: 130px;
+                    box-sizing: border-box;
+                    font-size: 3em;
+                    font-weight: bold;
+                }
+                section{
+                    display: flex;
+                    flex-wrap: wrap;  
+                    justify-content: center;
+                    font-size: 1.5em;
+                }
+                input[type=text], input[type=password]{
+                    width: 300px;
+                    margin-left: 5px;
+                    background: white;
+                    padding: 10px;
+                    border-radius: 16px;
+                    font-size: 1em;
+                    font-family: "Century Gothic", sans-serif;
+                    color: #29abe2;
+                }
+                section a{
+                    color: white;
+                    text-decoration: none;
+                }
+                .row{
+                    margin-bottom: 10px;
+                }
+                .esqueceu--login{
+                    min-width: 480px;
+                    text-align: center;
+                    display: block;
+                    margin-top: 20px;
+                }
+                input[type=submit]{
+                    background: white;
+                    color: #29abe2;
+                    padding: 10px 120px;
+                    box-sizing: border-box;
+                    font-size: 2em;
+                    border-radius:30px;
+                    margin-top: 100px;
+                }
+                
+            }
+        </style>
+        
+    </head>
+    <body>
+        <header>
+            <p>TA<br>ON</p>
+        </header>
+        
+        <section>
+            <form>
+                <p>Usuário</p>
+                <div class="row">
+                    <i class="fas fa-user"></i><input type="text" name="login">
+                </div>
+                <div class="row">
+                    <i class="fas fa-unlock-alt"></i><input type="password" name="password">
+                </div>
+                <input type="submit" value="Login">
+            </form>
+            <p><a href="#" class="esqueceu--login">Esqueceu o login</a></p>
+            <p><a href="#">Criar conta</a></p>
+        </section>
+    </body>
+</html>
