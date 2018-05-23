@@ -67,9 +67,9 @@
             */
             @media only screen and (max-width: 480px) {
                 body {
-                    background-color: #29abe2;
+                    background-color: white;
                     font-family: "Century Gothic", sans-serif;
-                    color: white;
+                    color: black;
                 }
                 
                 header,
@@ -80,51 +80,58 @@
                 }
                 header{
                     display: flex;
-                    justify-content: center;
+                    justify-content: space-between;
                     align-items: center;
                     margin-top:0;
-                    padding: 130px;
+                    background: #29abe2;
                     box-sizing: border-box;
-                    font-size: 3em;
-                    font-weight: bold;
-                }
-                section{
-                    display: flex;
-                    flex-wrap: wrap;  
-                    justify-content: center;
                     font-size: 1.5em;
-                }
-                input[type=text], input[type=password]{
-                    width: 300px;
-                    margin-left: 5px;
-                    background: white;
-                    padding: 10px;
-                    border-radius: 16px;
-                    font-size: 1em;
-                    font-family: "Century Gothic", sans-serif;
-                    color: #29abe2;
-                }
-                section a{
+                    font-weight: bold;
+                    padding: 10px 20px;
                     color: white;
-                    text-decoration: none;
                 }
-                .row{
-                    margin-bottom: 10px;
+                .header-aula{
+                    font-size: 1.5em;
+                    color: #aaa;
+                    margin: 20px;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                        
                 }
-                .esqueceu--login{
-                    min-width: 480px;
-                    text-align: center;
+                
+                .header-aula p{
                     display: block;
+                }
+                
+                .header-aula ul{
+                    display: flex;
+                    list-style-type: none;
                     margin-top: 20px;
                 }
-                input[type=submit]{
-                    background: white;
-                    color: #29abe2;
-                    padding: 15px 120px;
-                    box-sizing: border-box;
-                    font-size: 1.5em;
-                    border-radius:30px;
-                    margin-top: 100px;
+                
+                .header-aula ul li{
+                    margin-left: 10px;
+                }
+                .header-aula img{
+                    width: 60px;
+                }
+                
+                .comentario{
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 0 10px;
+                }
+                
+                .comentario p{
+                    color: #aaa;
+                    font-size:1.2em;
+                }
+                .comentario textarea{
+                    max-width: 480px;
+                    min-width: 400px;
+                    background: #ccc;
+                    min-height: 200px;
                 }
                 
             }
@@ -133,22 +140,26 @@
     </head>
     <body>
         <header>
-            <p>TA<br>ON</p>
+            <p>FeedBack Aula</p>
+            <i class="fas fa-home"></i>
         </header>
         
-        <section>
-            <form>
-                <p>Usuário</p>
-                <div class="row">
-                    <i class="fas fa-user"></i><input type="text" name="login">
-                </div>
-                <div class="row">
-                    <i class="fas fa-unlock-alt"></i><input type="password" name="password">
-                </div>
-                <input type="submit" value="LOGIN">
-            </form>
-            <p><a href="#" class="esqueceu--login">Esqueceu o login?</a></p>
-            <p><a href="#">Criar conta</a></p>
+        <section class="header-aula">
+            <p>Como foi a aula?</p>
+            <ul>
+                <li><img src="emoji/smile-1.svg" alt="emoji-1"></li>
+                <li><img src="emoji/smile-2.svg" alt="emoji-2"></li>
+                <li><img src="emoji/smile-3.svg" alt="emoji-3"></li>
+                <li><img src="emoji/smile-4.svg" alt="emoji-4"></li>
+                <li><img src="emoji/smile-5.svg" alt="emoji-5"></li>
+            </ul>
         </section>
+        
+        <section class="comentario">
+            <p>Deixe sua opnião sobre aula(Opcional)</p>
+            <textarea></textarea>
+            <p>Na aula me senti...</p>
+        </section>
+        
     </body>
 </html>
