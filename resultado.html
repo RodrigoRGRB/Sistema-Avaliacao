@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page title</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+        
+        <!-- External CSS -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        
+        <style>
+            /*
+             *Reset
+            */
+            input,
+            label,
+            select,
+            button,
+            textarea
+            {
+                margin:0;
+                border:0;
+                padding:0;
+                display:inline-block;
+                vertical-align:middle;
+                white-space:normal;
+                background:none;
+                line-height:1;
+            }
+
+            /* Remove the stupid outer glow in Webkit */
+            input:focus
+            {
+                outline:0;
+            }
+
+            /* Box Sizing Reset
+            -----------------------------------------------*/
+
+            /* All of our custom controls should be what we expect them to be */
+            input,
+            textarea
+            {
+                -webkit-box-sizing:content-box;
+                -moz-box-sizing:content-box;
+                box-sizing:content-box;
+            }
+
+            /* These elements are usually rendered a certain way by the browser */
+            button,
+            input[type=reset],
+            input[type=button],
+            input[type=submit],
+            input[type=checkbox],
+            input[type=radio],
+            select
+            {
+                -webkit-box-sizing:border-box;
+                -moz-box-sizing:border-box;
+                box-sizing:border-box;
+            }
+            
+            ul{
+                
+                    list-style-type: none;
+            }
+            
+            /*
+             *Configuração padrao
+            */
+            @media only screen and (max-width: 480px) {
+                body {
+                    background-color: white;
+                    font-family: "Century Gothic", sans-serif;
+                    color: black;
+                }
+                
+                header,
+                section,
+                .row,
+                .esqueceu--login{
+                    max-width: 480px;
+                }
+                header{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top:0;
+                    background: #29abe2;
+                    box-sizing: border-box;
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    padding: 10px 20px;
+                    color: white;
+                }
+                .header-aula{
+                    font-size: 1.5em;
+                    color: #aaa;
+                    margin: 20px;
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                        
+                }
+                
+                .header-aula p{
+                    display: block;
+                    min-width: 400px;
+                    text-align: center;
+                }
+                
+                .header-aula ul li{
+                    min-width: 100px;
+                    display: flex;
+                    align-items: center;
+                    padding:10px 0;
+                }
+                
+                .header-aula ul img{
+                    width: 30px;
+                    margin-right: 5px;
+                    margin-top: 5px;
+                }
+                
+                .header-aula article{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 20px;
+                    
+                }
+                .satisfacao{
+                    min-width: 300px
+                }
+                .satisfacao img{
+                    width: 250px;
+                }
+               
+                .porcentagem p, .comentarios p{
+                    display: block;
+                    min-width: 400px;
+                    font-size: 1.5em;
+                    color: #aaa;
+                }
+                
+            }
+        </style>
+        
+    </head>
+    <body>
+        <header>
+            <p>FeedBack Aula</p>
+            <i class="fas fa-home"></i>
+        </header>
+        
+        <section class="header-aula">
+            <p>Resultado:</p>
+            <article>
+                <div class="satisfacao">
+                    <img src="emoji/smile-4.svg" alt="emoji-4">
+                </div>
+                <ul>
+                    <li><img src="emoji/smile-1.svg" alt="emoji-1">16</li>
+                    <li><img src="emoji/smile-2.svg" alt="emoji-2">20</li>
+                    <li><img src="emoji/smile-2.svg" alt="emoji-2">20</li>
+                    <li><img src="emoji/smile-3.svg" alt="emoji-3">1</li>
+                    <li><img src="emoji/smile-4.svg" alt="emoji-4">3</li>
+                    <li><img src="emoji/smile-5.svg" alt="emoji-5">74</li>
+                </ul>
+            </article>
+        </section>
+        
+        <section class="porcentagem">
+            <p>Percentual</p>
+        </section>
+        
+        <section class="comentarios">
+            <p>Comentários</p>
+        </section>
+        
+        
+        
+        
+    </body>
+</html>
